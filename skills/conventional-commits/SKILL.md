@@ -15,14 +15,25 @@ Use:
 type(scope): summary
 ```
 
-Common types:
+Official semver-significant types:
 
-- `feat`: user-visible feature
-- `fix`: bug fix
-- `refactor`: behavior-preserving code change
-- `test`: test-only change
-- `docs`: documentation-only change
-- `chore`: maintenance
+- `feat`: user-visible feature; maps to a minor release.
+- `fix`: user-visible bug fix; maps to a patch release.
+
+Common extended types:
+
+- `build`: build system, dependency, packaging, or lockfile change.
+- `chore`: maintenance that does not affect runtime behavior.
+- `ci`: continuous integration, release, or automation workflow change.
+- `docs`: documentation-only change.
+- `perf`: performance improvement without changing intended behavior.
+- `refactor`: behavior-preserving code change.
+- `revert`: revert a previous commit.
+- `style`: formatting, whitespace, lint-only, or code style change.
+- `test`: test-only change.
+
+Use the repository's configured type list when it exists. If a change honestly
+fits multiple types, prefer splitting the commit.
 
 ## Rules
 
@@ -31,6 +42,8 @@ Common types:
 3. Use a scope when it clarifies the affected area.
 4. Write the summary in imperative mood.
 5. Do not hide behavior changes in `refactor` or `chore`.
+6. Mark breaking changes with `!` after the type or scope, or with a
+   `BREAKING CHANGE:` footer.
 
 ## Final Check
 
