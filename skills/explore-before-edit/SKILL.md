@@ -11,13 +11,22 @@ project instead of inventing a second style.
 ## Steps
 
 1. Identify the target files, nearby modules, and likely tests.
-2. Search for existing helpers, types, patterns, names, and error handling.
-3. Read the closest examples before editing.
+2. Search for existing helpers, types, patterns, names, and error handling with
+   targeted text search.
+3. Read the nearest definition plus one or two callers or sibling examples
+   before editing.
 4. Prefer existing conventions over new abstractions.
-5. State the local pattern you are following before making substantial changes.
+5. Stop once you can name the local pattern and likely blast radius.
+6. State the local pattern you are following before making substantial changes.
+
+## When Not To Use
+
+Do not use this skill to justify broad exploration for a trivial or localized
+change where the pattern is already obvious. Explore in proportion to the
+change's blast radius.
 
 ## Final Check
 
 - Did you inspect before editing?
-- Did you reuse an existing helper or pattern when one already existed?
-- Did you avoid adding a new convention where the repo already had one?
+- Can you name the local pattern and likely blast radius?
+- Did you avoid reading beyond what the change needs?
