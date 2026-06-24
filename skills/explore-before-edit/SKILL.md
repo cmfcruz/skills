@@ -1,6 +1,5 @@
 ---
 name: explore-before-edit
-phase: before-writing
 description: Use before writing new code in an unfamiliar area, adding a helper, introducing a pattern, or answering implementation questions that require repository context. For changing existing behavior with callers, use refactor-safely instead. Do not use for pure prose, scheduling, or questions that do not require codebase inspection.
 ---
 
@@ -22,4 +21,3 @@ project instead of inventing a second style.
 - Did you inspect before editing?
 - Did you reuse an existing helper or pattern when one already existed?
 - Did you avoid adding a new convention where the repo already had one?
-

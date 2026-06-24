@@ -1,6 +1,5 @@
 ---
 name: conventional-commits
-phase: finishing
 description: Use when preparing, naming, reviewing, or creating commits for completed code or documentation changes. Do not use during implementation unless the user asks for commit planning.
 ---
 
@@ -38,4 +37,3 @@ Common types:
 - Does the commit message match the actual diff?
 - Is the commit small enough to review?
 - Would the type make sense in a changelog?
-

@@ -1,6 +1,5 @@
 ---
 name: finish-up
-phase: finishing
 description: Use when code changes are believed complete and before reporting done, opening a PR, or handing work back. Use to review the diff, remove dead code, run checks, and verify claims. Do not use at the start of implementation or for non-code tasks.
 ---
 
@@ -21,4 +20,3 @@ Close the loop before claiming completion.
 - Is the diff scoped to the task?
 - Are claims backed by commands, tests, or file inspection?
 - Are remaining risks or skipped checks stated clearly?
-

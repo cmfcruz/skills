@@ -71,7 +71,7 @@ the top-level `VERSION` file for reproducible builds.
 ## Skill Shape
 
 Each skill lives in `skills/<skill-name>/SKILL.md`. The `description` frontmatter
-is the routing surface, so it must include the phase and concrete trigger. Keep
-skill bodies short, procedural, and explicit about when not to use the skill. An
-optional `phase:` field labels each skill for human and tooling sorting; it does
-not drive activation.
+is the routing surface, so it must include the phase context and concrete
+trigger. Keep skill bodies short, procedural, and explicit about when not to use
+the skill. Phase guidance belongs in `AGENTS.md`; do not duplicate it as custom
+skill frontmatter.

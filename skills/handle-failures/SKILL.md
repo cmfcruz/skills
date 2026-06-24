@@ -1,6 +1,5 @@
 ---
 name: handle-failures
-phase: during-writing
 description: Use during writing when adding catch blocks, error branches, retries, validation failures, fallbacks, or user-facing failure messages. Do not use when no failure path is being changed.
 ---
 
@@ -22,4 +21,3 @@ Make failures explicit, actionable, and consistent with the surrounding code.
 - Can a developer understand what failed and why?
 - Is the failure observable in logs, return values, UI, or tests?
 - Did you avoid hiding unexpected states?
-

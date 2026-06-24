@@ -1,6 +1,5 @@
 ---
 name: house-style
-phase: during-writing
 description: Use during code authoring when adding or changing names, branches, functions, helpers, modules, or repeated logic. Apply while writing production code or tests. Do not use for non-code tasks.
 ---
 
@@ -30,4 +29,3 @@ when they represent the same concept or behavior and the shared name is clear.
 - Does each function have one clear responsibility?
 - Is repeated code either justified or intentionally shared?
 - Is the change scoped to the task, with unrelated cleanup left out?
-

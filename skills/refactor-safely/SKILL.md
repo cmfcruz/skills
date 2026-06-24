@@ -1,6 +1,5 @@
 ---
 name: refactor-safely
-phase: before-writing
 description: Use before changing existing behavior, refactoring shared logic, extracting helpers from existing code, moving code, renaming public symbols, or editing code with unknown callers. For orienting in a new area before writing fresh code, use explore-before-edit instead. Do not use for brand-new isolated code.
 ---
 
@@ -26,4 +25,3 @@ the cleanup is not required, leave it for a separate task.
 - Are callers mapped?
 - Is current behavior pinned by tests or explicit verification?
 - Is the change behavior-preserving unless the user asked otherwise?
-
