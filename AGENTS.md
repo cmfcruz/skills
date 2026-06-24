@@ -13,6 +13,11 @@ When doing coding work, organize behavior into three phases:
 3. Finishing: review the diff, remove dead code, verify claims, and commit
    cleanly.
 
+Two modes change how the phases apply. For new code, move forward through the
+phases. For changing existing code, pin current behavior first, keep the change
+behavior-preserving, and treat the diff as the deliverable rather than something
+to minimize.
+
 Use skills whose descriptions match the current phase and action. Do not load a
 skill only because it is philosophically related; load it when the trigger fits
 the task.

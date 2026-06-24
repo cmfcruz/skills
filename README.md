@@ -21,7 +21,17 @@ The skills should stay:
 
 ## Organization
 
-Phases organize the philosophy. Triggers organize the files.
+Phases organize the philosophy. Triggers organize the files. Each skill lives in
+`skills/<skill-name>/SKILL.md`, and its `description` frontmatter is the routing
+surface — so the description, not this README, is the source of truth for when a
+skill loads.
+
+Two modes shift how the phases apply:
+
+- New code: move forward through the phases — explore, author cleanly, finish.
+- Changing existing code: pin current behavior first, keep the change
+  behavior-preserving, and treat the diff itself as the deliverable rather than
+  something to minimize.
 
 ## V1 Skills
 
@@ -36,8 +46,8 @@ duplicating helpers, or refactoring behavior they have not pinned down.
 
 ### During Writing
 
-- `house-style`: keep names, control flow, functions, and reuse clean while
-  authoring code.
+- `house-style`: keep names, control flow, functions, reuse, and change scope
+  clean while authoring code.
 - `handle-failures`: write explicit, useful error paths.
 - `vet-dependency`: check existing project options before adding dependencies.
 - `write-tests`: test real behavior rather than implementation trivia.
@@ -53,58 +63,15 @@ readable, local to the task, and aligned with the project.
 These skills close the loop. They keep finished work reviewable, verified, and
 easy to understand later.
 
-## Skill Inventory
+## Provenance
 
-### `explore-before-edit`
-
-Use before writing or changing code in an unfamiliar area. The agent should read
-nearby files, search for existing helpers and patterns, and identify the local
-style before editing.
-
-### `refactor-safely`
-
-Use before changing existing behavior, moving code, extracting helpers, or
-renaming shared symbols. The agent should map callers, pin current behavior, and
-avoid broad cleanup during unrelated work.
-
-### `house-style`
-
-Use while authoring code. This is the core readability skill: intention-revealing
-names, clear control flow, small focused functions, and justified reuse without
-premature abstraction.
-
-### `handle-failures`
-
-Use when writing error paths, validation branches, retries, fallbacks, or catch
-blocks. The agent should make failures explicit, actionable, and consistent with
-the surrounding code.
-
-### `vet-dependency`
-
-Use before adding a new dependency, package, framework, service dependency, or
-uncommon import. The agent should prefer existing project tools and justify any
-new dependency.
-
-### `write-tests`
-
-Use when adding, changing, or repairing tests. The agent should test real
-behavior, avoid overfitting to implementation details, and use mocks only at
-appropriate boundaries.
-
-### `finish-up`
-
-Use when the agent believes implementation is complete. The agent should review
-the diff, remove dead code, check for accidental duplication, run focused
-verification, and report what was checked.
-
-### `conventional-commits`
-
-Use when preparing commits. The agent should create small, scoped commits with
-accurate conventional messages such as `feat:`, `fix:`, `refactor:`, `test:`,
-and `docs:`.
+These skills are hand-authored and reviewed in this repository, and versioned via
+the top-level `VERSION` file for reproducible builds.
 
 ## Skill Shape
 
 Each skill lives in `skills/<skill-name>/SKILL.md`. The `description` frontmatter
 is the routing surface, so it must include the phase and concrete trigger. Keep
-skill bodies short, procedural, and explicit about when not to use the skill.
+skill bodies short, procedural, and explicit about when not to use the skill. An
+optional `phase:` field labels each skill for human and tooling sorting; it does
+not drive activation.

@@ -1,5 +1,6 @@
 ---
 name: vet-dependency
+phase: during-writing
 description: Use during writing before adding a package, library, framework, service dependency, or new import that is not already common in the repository. Do not use for dependencies explicitly required by the user.
 ---
 

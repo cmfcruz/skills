@@ -1,6 +1,7 @@
 ---
 name: explore-before-edit
-description: Use before writing or changing code in an unfamiliar area, adding a helper, introducing a pattern, or answering implementation questions that require repository context. Do not use for pure prose, scheduling, or questions that do not require codebase inspection.
+phase: before-writing
+description: Use before writing new code in an unfamiliar area, adding a helper, introducing a pattern, or answering implementation questions that require repository context. For changing existing behavior with callers, use refactor-safely instead. Do not use for pure prose, scheduling, or questions that do not require codebase inspection.
 ---
 
 # Explore Before Edit

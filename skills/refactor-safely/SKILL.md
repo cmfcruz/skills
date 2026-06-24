@@ -1,6 +1,7 @@
 ---
 name: refactor-safely
-description: Use before changing existing behavior, refactoring shared logic, extracting helpers, moving code, renaming public symbols, or editing code with unknown callers. Do not use for brand-new isolated code.
+phase: before-writing
+description: Use before changing existing behavior, refactoring shared logic, extracting helpers from existing code, moving code, renaming public symbols, or editing code with unknown callers. For orienting in a new area before writing fresh code, use explore-before-edit instead. Do not use for brand-new isolated code.
 ---
 
 # Refactor Safely

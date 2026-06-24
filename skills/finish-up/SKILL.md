@@ -1,6 +1,7 @@
 ---
 name: finish-up
-description: Use when code changes are believed complete and before reporting done, opening a PR, or handing work back. Use to review the diff, remove dead code, run checks, and verify claims. Do not use at the start of implementation.
+phase: finishing
+description: Use when code changes are believed complete and before reporting done, opening a PR, or handing work back. Use to review the diff, remove dead code, run checks, and verify claims. Do not use at the start of implementation or for non-code tasks.
 ---
 
 # Finish Up

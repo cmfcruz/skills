@@ -1,5 +1,6 @@
 ---
 name: write-tests
+phase: during-writing
 description: Use during writing when adding, changing, or repairing tests for code behavior. Use before refactors that need a safety net. Do not use for snapshot churn or tests that only mirror implementation details.
 ---
 

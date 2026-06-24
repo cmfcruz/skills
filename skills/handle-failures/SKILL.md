@@ -1,5 +1,6 @@
 ---
 name: handle-failures
+phase: during-writing
 description: Use during writing when adding catch blocks, error branches, retries, validation failures, fallbacks, or user-facing failure messages. Do not use when no failure path is being changed.
 ---
 
