@@ -77,3 +77,13 @@ is the routing surface, so it must include the phase context and concrete
 trigger. Keep skill bodies short, procedural, and explicit about when not to use
 the skill. Phase guidance belongs in `AGENTS.md`; do not duplicate it as custom
 skill frontmatter.
+
+## Validation
+
+This is a plain-text skill library. The only checks that belong here are static:
+each `SKILL.md` must carry valid `name` and `description` frontmatter and a
+short, procedural body. Routing and behavioral validation — whether a skill
+actually loads at the right moment and produces the intended result — depends on
+the consuming harness, model, and bundled tooling, so it is the responsibility of
+the consuming project, not this repository. Do not add routing or eval harnesses
+here.
