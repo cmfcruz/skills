@@ -1,8 +1,7 @@
 # Agent Guidance
 
-This repository contains foundational engineering hygiene skills for coding agents,
-especially non-frontier models. Keep the skills procedural, concrete, and easy
-to route.
+This repository contains foundational engineering hygiene skills for coding
+agents. Keep the skills procedural, concrete, and easy to route.
 
 When doing coding work, organize behavior into three phases:
 

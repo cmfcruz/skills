@@ -35,7 +35,7 @@ Write the body as a short procedure:
 
 This repo should only carry static content checks, such as valid frontmatter and
 well-formed skill text. Routing and behavioral validation belong in the consuming
-project, because they depend on the harness, model, prompts, image layout, and
-installed tooling.
+project, because they depend on the harness, model, prompts, configuration
+layout, and installed tooling.
 
 Do not add routing or eval harnesses to this repository.

@@ -13,7 +13,7 @@ authoring new logic, and when they are about to call the work done.
 
 The skills should stay:
 
-- Procedural enough for non-frontier models to follow.
+- Procedural enough for coding agents to follow.
 - Small enough to route cleanly.
 - Explicit about when not to apply a rule.
 - Focused on readable, maintainable code over clever code.
@@ -67,8 +67,7 @@ easy to understand later.
 
 ## Provenance
 
-These skills are hand-authored and reviewed in this repository, and versioned via
-the top-level `VERSION` file for reproducible builds.
+These skills are hand-authored and reviewed in this repository.
 
 ## Skill Shape
 
