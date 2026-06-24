@@ -16,8 +16,10 @@ project instead of inventing a second style.
 3. Read the nearest definition plus one or two callers or sibling examples
    before editing.
 4. Prefer existing conventions over new abstractions.
-5. Stop once you can name the local pattern and likely blast radius.
-6. State the local pattern you are following before making substantial changes.
+5. Stop exploring once you can describe the local pattern and likely blast
+   radius in one sentence.
+6. Before substantial edits, write that one sentence into your plan or reply so
+   the choice is visible and reviewable.
 
 ## When Not To Use
 
@@ -28,5 +30,5 @@ change's blast radius.
 ## Final Check
 
 - Did you inspect before editing?
-- Can you name the local pattern and likely blast radius?
+- Did you state the pattern and blast radius before editing (not just think it)?
 - Did you avoid reading beyond what the change needs?
