@@ -30,8 +30,8 @@ Two modes shift how the phases apply:
 
 - New code: move forward through the phases — explore, author cleanly, finish.
 - Changing existing code: pin current behavior first, keep the change
-  behavior-preserving, and treat the diff itself as the deliverable rather than
-  something to minimize.
+  behavior-preserving, and treat the diff as the review artifact: intentional,
+  scoped, and easy to verify.
 
 ## V1 Skills
 
@@ -48,6 +48,8 @@ duplicating helpers, or refactoring behavior they have not pinned down.
 
 - `house-style`: keep names, control flow, functions, reuse, and change scope
   clean while authoring code.
+- `comments-explain-why`: write comments only when they clarify intent,
+  tradeoffs, constraints, or surprising behavior.
 - `handle-failures`: write explicit, useful error paths.
 - `vet-dependency`: check existing project options before adding dependencies.
 - `write-tests`: test real behavior rather than implementation trivia.

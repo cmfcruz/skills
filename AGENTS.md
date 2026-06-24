@@ -15,10 +15,9 @@ When doing coding work, organize behavior into three phases:
 
 Two modes change how the phases apply. For new code, move forward through the
 phases. For changing existing code, pin current behavior first, keep the change
-behavior-preserving, and treat the diff as the deliverable rather than something
-to minimize.
+behavior-preserving, and treat the diff as the review artifact: intentional,
+scoped, and easy to verify.
 
 Use skills whose descriptions match the current phase and action. Do not load a
 skill only because it is philosophically related; load it when the trigger fits
 the task.
-
