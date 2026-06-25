@@ -9,8 +9,8 @@ Keep code readable while it is being written.
 
 ## Rules
 
-1. Use intention-revealing names from the project domain; name magic numbers
-   and strings instead of inlining them.
+1. Use intention-revealing names from the project domain; name non-obvious
+   magic values instead of inlining them.
 2. Prefer clear control flow: guard clauses over deep nesting.
 3. Keep functions focused on one job.
 4. Remove unjustified duplication, but avoid premature abstraction.
