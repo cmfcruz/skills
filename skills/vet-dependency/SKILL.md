@@ -17,12 +17,15 @@ maintenance or supply-chain risk.
 2. State the need clearly: what capability is required, why it is not trivial to
    implement locally, and what happens if the dependency is not added.
 3. Vet the candidate dependency with ecosystem-native evidence where available:
-   registry metadata such as `npm view <pkg>`, PyPI, crates.io, pkg.go.dev, or
-   the package registry page; security tools such as `npm audit`, `pip-audit`,
-   `cargo audit`, `go list -m -u -json`, or a project-native equivalent;
-   repository signals such as recent releases, maintainer activity, and
-   unresolved critical issues; license compatibility; and dependency cost such
-   as transitive dependencies, package size, install scripts, and runtime impact.
+   - Registry metadata such as `npm view <pkg>`, PyPI, crates.io, pkg.go.dev,
+     `go list -m -u -json`, or the package registry page.
+   - Security or advisory tooling such as `npm audit`, `pip-audit`,
+     `cargo audit`, `govulncheck`, or a project-native equivalent.
+   - Repository signals such as recent releases, maintainer activity, and
+     unresolved critical issues.
+   - License compatibility.
+   - Dependency cost such as transitive dependencies, package size, install
+     scripts, and runtime impact.
 4. Do not claim a dependency was vetted unless you checked the relevant
    registry or package metadata and one security or advisory source when
    available.
