@@ -28,7 +28,9 @@ Write the body as a short procedure:
 - Prefer steps or rules over essays.
 - Include a final check.
 - Keep the skill focused on one job.
-- Avoid project-specific tooling, policy, repository names, or runtime details.
+- Avoid anything tied to one specific project — its tooling, policy, repository
+  names, paths, or runtime layout. Naming cross-ecosystem tools (npm, cargo, go)
+  as examples is fine.
 - Put phase guidance in `AGENTS.md`, not in per-skill metadata.
 
 ## Validation Scope
