@@ -18,11 +18,16 @@ errors, side effects, and public contracts, not internal structure.
    verification accordingly.
 2. Identify behavior that must remain unchanged.
 3. Locate existing tests or add characterization tests (tests that pin current
-   behavior as-is), and confirm they pass before restructuring.
-4. State the likely blast radius in one sentence before editing.
+   behavior as-is), and confirm they pass before restructuring. Where tests are
+   not feasible, capture current behavior with a documented manual check of
+   specific inputs and outputs.
+4. State the likely blast radius (which code and callers this change can
+   affect) in one sentence before editing.
 5. Make the smallest change that achieves the intended restructuring without
    altering behavior.
-6. Run focused tests that cover the affected code paths and their callers.
+6. Run focused tests or repeat the documented manual check for the affected
+   code paths and their callers, and confirm the behavior still matches the
+   baseline.
 
 ## When Not To Use
 
