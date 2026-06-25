@@ -17,10 +17,9 @@ temporary data structures.
 
 1. Name the behavior in caller terms before choosing assertions.
 2. Exercise the public entry point used by the caller whenever one exists.
-3. Use real inputs and outputs unless they make the test slow, external,
-   nondeterministic, unsafe, or hard to isolate.
-4. Mock only those boundaries; do not mock the code path you are trying to
-   verify.
+3. Use real inputs and outputs for in-process behavior.
+4. Mock only the boundaries named in When To Mock; do not mock the code path you
+   are trying to verify.
 5. Cover the normal path, at least one relevant failure path, and any boundary
    case named by the code contract or bug report.
 6. Keep each test independent: it should not depend on test order, leaked
