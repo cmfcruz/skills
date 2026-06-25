@@ -5,18 +5,45 @@ description: Use during writing before adding a package, library, framework, ser
 
 # Vet Dependency
 
-Avoid adding dependencies when the project already has a suitable solution.
+Vet dependencies before adding them so the project does not take on unnecessary
+maintenance or supply-chain risk.
 
 ## Steps
 
-1. Search existing dependencies and imports.
-2. Check whether the standard library or existing utilities are enough.
-3. Prefer established project dependencies over new packages.
-4. If adding a dependency is still justified, state why.
-5. Update lockfiles and tests using the project-native package manager.
+1. Check whether the project already has a suitable dependency, helper, or
+   standard-library API. Inspect manifests and lockfiles such as `package.json`,
+   `pyproject.toml`, `go.mod`, and `Cargo.toml`, then search existing imports
+   and local utilities.
+2. State the need clearly: what capability is required, why it is not trivial to
+   implement locally, and what happens if the dependency is not added.
+3. Vet the candidate dependency with ecosystem-native evidence where available:
+   registry metadata such as `npm view <pkg>`, PyPI, crates.io, pkg.go.dev, or
+   the package registry page; security tools such as `npm audit`, `pip-audit`,
+   `cargo audit`, `go list -m -u -json`, or a project-native equivalent;
+   repository signals such as recent releases, maintainer activity, and
+   unresolved critical issues; license compatibility; and dependency cost such
+   as transitive dependencies, package size, install scripts, and runtime impact.
+4. Do not claim a dependency was vetted unless you checked the relevant
+   registry or package metadata and one security or advisory source when
+   available.
+5. Add the dependency only when the benefit clearly outweighs the maintenance
+   and supply-chain cost. A dependency is usually justified when the capability
+   is non-trivial, security-sensitive, protocol-heavy, compatibility-heavy, or
+   outside the project's core domain.
+6. If adding the dependency, use the project-native package manager, update the
+   manifest and lockfile together, add or update focused tests, and state the
+   rationale in your plan, reply, PR description, or commit message.
+7. If not adding the dependency, explain the simpler alternative and note which
+   existing dependency, standard-library API, or local implementation will be
+   used instead.
 
 ## Final Check
 
-- Is the dependency necessary?
-- Is it already present in the project?
-- Did you avoid adding a package for trivial code?
+- Did you confirm the capability is not already available in the project or
+  standard library?
+- Did you vet license, maintenance, security, ecosystem fit, and dependency
+  cost with concrete evidence?
+- Did you clearly state why adding or avoiding the dependency is the better
+  choice?
+- If added, did you update the manifest and lockfile with the native package
+  manager and run focused tests?
