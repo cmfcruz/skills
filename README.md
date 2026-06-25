@@ -17,7 +17,6 @@ The skills should stay:
 - Small enough to route cleanly.
 - Explicit about when not to apply a rule.
 - Focused on readable, maintainable code over clever code.
-- Authored by us and evolved through use.
 
 ## Organization
 
