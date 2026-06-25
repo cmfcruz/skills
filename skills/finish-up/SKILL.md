@@ -10,9 +10,11 @@ Close the loop before claiming completion.
 ## Steps
 
 1. Review the diff for unrelated changes.
-2. Remove dead code, commented-out code, unused imports, and tests made obsolete by this change (never tests that are merely failing).
+2. Remove dead code, commented-out code, unused imports, and tests made
+   obsolete by this change (never tests that are merely failing).
 3. Check for accidental duplication or inconsistent naming.
-4. Do not add new behavior or unrelated changes while finishing; note anything out of scope instead of fixing it here.
+4. Do not add new behavior or unrelated changes while finishing; note anything
+   out of scope instead of fixing it here.
 5. Run the most relevant checks.
 6. Report what changed and what verification ran.
 
