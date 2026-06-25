@@ -12,14 +12,15 @@ frontmatter:
 ```yaml
 ---
 name: skill-name
-description: Use when... Do not use when...
+description: Use when <trigger>. Do not use for <exclusion>.
 ---
 ```
 
 Write the `description` as the routing contract:
 
 - Lead with the concrete trigger.
-- Include important exclusions with "Do not use...".
+- Include important exclusions; the wording is flexible ("Do not use for…",
+  "Do not use when…", "Do not use during…").
 - Keep it portable across Codex, Claude Code, and other skill-aware agents.
 - Do not rely on custom frontmatter for routing.
 
