@@ -25,12 +25,9 @@ Phases organize the philosophy. Triggers organize the files. Each skill lives in
 surface — so the description, not this README, is the source of truth for when a
 skill loads.
 
-Two modes shift how the phases apply:
-
-- New code: move forward through the phases — explore, author cleanly, finish.
-- Changing existing code: pin current behavior first, keep the change
-  behavior-preserving, and treat the diff as the review artifact: intentional,
-  scoped, and easy to verify.
+The skills cover the phases of development work, and apply in two modes —
+writing new code and changing existing code. `AGENTS.md` is the canonical guide
+for how the phases and modes shape a task.
 
 ## V1 Skills
 
