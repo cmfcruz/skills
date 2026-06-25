@@ -27,7 +27,8 @@ when they represent the same concept or behavior and the shared name is clear.
 
 ## Final Check
 
-- Are names meaningful without extra context, with magic values named?
+- Are names meaningful without extra context, with non-obvious magic values
+  named?
 - Is nesting shallow enough to scan?
 - Does each function have one clear responsibility?
 - Is repeated code either justified or intentionally shared?
